@@ -1,13 +1,12 @@
 from rich.console import Console
 from rich.table import Table
 
-table = Table(title="packages in environment at <prefix_path>")
+table = Table(title="packages in environment at <prefix_path>", style= "black", header_style="black")
 
 table.add_column("Name", style="dark_blue", no_wrap=True)
-table.add_column("Version", style="magenta")
-table.add_column("Build", style="dark_red")
+table.add_column("Version", style="dark_green")
+table.add_column("Build", style="dark_green")
 table.add_column("Channel", style="dark_green")
-                            
                                                         
 table.add_row("anaconda-client", "1.12.1", "pyhd8ed1ab_1", "conda-forge")
 table.add_row("backports", "1.1", "pyhd3eb1b0_0")

@@ -1,7 +1,7 @@
 from rich.console import Console
 from rich.table import Table
 
-table = Table(title="conda environments")
+table = Table(title="conda environments", style= "black", header_style="black")
 
 table.add_column("Name", style="dark_blue", no_wrap=True)
 table.add_column("Prefix", style="dark_green")

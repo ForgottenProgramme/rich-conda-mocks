@@ -1,7 +1,7 @@
 from rich.console import Console
 from rich.table import Table
 
-table = Table(title="Information about current conda install", show_header=False, leading=False, show_lines=True)
+table = Table(title="Information about current conda install", show_header=False, show_lines=True, style= "black")
 
 table.add_column("", style="dark_blue", no_wrap=True)
 table.add_column("", style="dark_green", no_wrap=True)
